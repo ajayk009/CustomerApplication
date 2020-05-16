@@ -9,19 +9,7 @@ spring:
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
-    show-sql: true
-eureka: 
-  client: 
-    enabled: true
-    serviceUrl: 
-       defaultZone: ${EUREKA_URI:http://localhost:9090/eureka/}
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    prefer-ip-address: true
-    home-page-url: http://eureka:9090/
-    hostname: localhost
-    
+    show-sql: true    
     
 server:
   port: ${portno:9191}
